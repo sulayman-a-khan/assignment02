@@ -44,15 +44,31 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  position: relative;
+}
+.hero-image-div {
+    background-image: url(../images/hero-circle.png);
+    background-repeat: no-repeat;     
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;        
+}
+.new-badge {
+    position: absolute;
+    top: 15px;    
+    right: 20px;  
+    background-color: #00FF85; 
+    color: #1a0b2e;    
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 133, 0.6); 
 }
 
-.hero-circle-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-}
+
 
 .hero-btn {
   display: flex;
@@ -107,4 +123,11 @@ body {
   font-size: 16px;
   font-weight: 500px;
 }
+
+
+
+
+   
+
+
 
