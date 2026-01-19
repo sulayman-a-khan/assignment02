@@ -206,8 +206,9 @@ body {
 }
 .card {
     background-color: #351165;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 40px;
+    
     
 
 
@@ -229,3 +230,49 @@ body {
 .card3 { grid-area: card3; }
 .card4 { grid-area: card4; }
 .card5 { grid-area: card5; }
+
+.play-list {
+    background-color: #351165;
+    border-radius: 20px;
+    width: 380px;
+    overflow: hidden;
+
+}
+.description {
+    padding: 24px;
+}
+.description h3 {
+    font-size: 24px;
+    font-weight:bold;
+    color: white;
+}
+.description p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.562);
+    line-height: 24px;
+    margin: 12px 0px;
+}
+.description span {
+    color: #00ff85;
+    font-size: 16px;
+    font-weight: 700;
+}
+.playlist-main-div {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.featured-episode-container {
+    background-color: #1a0b2e;
+    max-width: 1600px;
+    padding: 120px 0px;
+}
+.featured-area h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
