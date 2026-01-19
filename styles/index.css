@@ -327,8 +327,8 @@ body {
   border-radius: 50%;
 }
 footer {
-  height: 412px;
-  width: 1600px;
+  
+  max-width:  1600px;
   background-image: url(../images/footer-bg.png);
   background-position: center;
   background-size: cover;
