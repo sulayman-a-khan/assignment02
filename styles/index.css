@@ -47,6 +47,7 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+
 /* hero section */
 .hero-sec {
   background-image: url(../images/hero-bg.png);
@@ -278,6 +279,7 @@ body {
   width: 380px;
   overflow: hidden;
 }
+
 .description {
   padding: 24px;
 }
@@ -350,7 +352,6 @@ body {
 .host-icons img {
   height: 30px;
   width: 30px;
-  padding: 5px;
   border: 1px solid rgba(255, 255, 255, 0.363);
   border-radius: 50%;
 }
@@ -409,3 +410,155 @@ gap: 8px;
   box-shadow: 0 12px 30px rgba(234, 1, 255, 0.35);
 }
 
+
+
+
+@media screen and (max-width: 768px) {
+  /* --- Global Resets --- */
+ 
+
+  /* --- Navbar (Match Screenshot) --- */
+  .navbar {
+    padding: 20px;
+  }
+  .navbar ul, .navbar .gradient-btn {
+    display: none; /* In the screenshot, these are replaced by the menu icon */
+  }
+  /* If you have a hamburger icon, it would show here */
+
+  /* --- Hero Section --- */
+  .hero-sec {
+    padding: 40px 20px !important;
+    background-size: cover;
+    
+  }
+  .hero {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-image-div {
+    width: 260px;
+    height: 260px;
+    background-size: contain;
+  }
+  .hero-image-div img {
+    height: 100px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .hero-btn-container {
+   padding: 20px;
+    width: 100%;
+   
+  }
+  .gradient-btn2, .subscribe-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+  }
+
+  /* --- About Section & 2x2 Stats Grid --- */
+  .text-div h1 {
+    font-size: 32px;
+  }
+  .text-div {
+    padding: 0px 30px;
+  }
+  .rating-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exact 2-column layout from image */
+    gap: 40px 20px;
+    border-top: none;
+    padding-top: 40px;
+  }
+  .rating-card h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .rating-card p {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  /* --- Why Choose TechWave (Stacked Cards) --- */
+  .grid-layout-container h2 {
+    font-size: 32px;
+  }
+  .grid-layout {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px;
+    padding: 0px 30px;
+  }
+  .card {
+    grid-area: auto !important; /* Force ignore desktop grid-areas */
+    width: 100%;
+    padding: 30px;
+    background-color: #2d144b; /* Darker purple matching image cards */
+    align-items: flex-start;
+  }
+  .card h1 {
+    font-size: 22px;
+  }
+
+  /* --- Featured Episodes --- */
+  .playlist-main-div {
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 30px;
+  }
+  .play-list {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .play-list iframe {
+    width: 100%;
+    height: 270px;
+  }
+  .description h3 {
+    font-size: 20px;
+  }
+
+  /* --- Meet The Host --- */
+  .host-details-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .meet-the-host {
+    padding: 0 30px;
+  }
+  .host-img img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .host-icons {
+    justify-content: center;
+  }
+
+  /* --- Footer --- */
+  footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+  }
+  .footer-div {
+    padding: 60px 20px;
+  }
+  .footer-logo {
+    width: 220px;
+    height: auto;
+  }
+  .icon-group {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 90px;
+    justify-content: center;
+    
+    
+    margin: 30px auto;
+    gap: 15px;
+  }
+}
