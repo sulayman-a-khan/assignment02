@@ -326,3 +326,38 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.363);
   border-radius: 50%;
 }
+footer {
+  height: 412px;
+  width: 1600px;
+  background-image: url(../images/footer-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.footer-div {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 120px 0px;
+}
+.footer-logo {
+height: 60px;
+width: 410px;
+}
+.footer-div p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.753);
+}
+.social-icons {
+display: flex;
+gap: 8px;
+}
+.icon-group {
+  margin: 32px 0;
+  width: 544px;
+  display: flex;
+  justify-content: space-between;
+}
