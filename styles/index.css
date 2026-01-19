@@ -1,13 +1,16 @@
+/* css for all the webpage */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* css for all the body */
 body {
   max-width: 1600px;
   margin: 0 auto;
   font-family: inter;
 }
+/* navigation bar */
 .navbar-sec {
   background-color: #1a0b2e;
   max-width: 1600px;
@@ -34,6 +37,17 @@ body {
   text-decoration: none;
   color: white;
 }
+.gradient-btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff7a18, #ea01ff, #8c00ff);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* hero section */
 .hero-sec {
   background-image: url(../images/hero-bg.png);
   background-repeat: no-repeat;
@@ -89,11 +103,6 @@ body {
   }
 }
 
-.hero-btn {
-  display: flex;
-  gap: 8px;
-}
-
 .hero h1 {
   font-size: 60px;
   font-weight: 700;
@@ -105,16 +114,11 @@ body {
   color: white;
   margin: 24px auto;
 }
-.gradient-btn {
-  padding: 12px 16px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(90deg, #ff7a18, #ea01ff, #8c00ff);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
+.hero-btn-container {
+  display: flex;
+  gap: 8px;
 }
+
 .gradient-btn2 {
   display: flex;
   justify-content: center;
@@ -142,6 +146,7 @@ body {
   font-size: 16px;
   font-weight: 500px;
 }
+/* About The Podcast Section */
 
 .about-podcast-sec {
   background-color: #1a0b2e;
@@ -158,6 +163,7 @@ body {
 }
 .text-div h1 {
   margin-top: 0;
+  margin-bottom: 10px;
   font-size: 48px;
   font-weight: 800;
   color: white;
@@ -193,6 +199,7 @@ body {
   color: rgba(255, 255, 255, 0.726);
 }
 
+/* Grid Layout Section (why choose techwave) */
 .grid-layout-sec {
   background-color: #230e3d;
   max-width: 1600;
@@ -202,6 +209,13 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 120px 0;
+}
+.grid-layout-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
 }
 .grid-layout {
   display: grid;
@@ -219,17 +233,15 @@ body {
     "card4 card4 card5"
     "card4 card4 card5";
 }
-.grid-layout-container h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-}
+
 .card {
   background-color: #351165;
   border-radius: 30px;
   padding: 40px;
+  display: flex;           
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
 }
 .card h1 {
   font-size: 24px;
@@ -259,6 +271,7 @@ body {
   grid-area: card5;
 }
 
+/* Featured Episodes starts here */
 .play-list {
   background-color: #351165;
   border-radius: 20px;
@@ -341,6 +354,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.363);
   border-radius: 50%;
 }
+/* footer area */
 footer {
   
   max-width:  1600px;
@@ -362,21 +376,24 @@ footer {
 height: 60px;
 width: 410px;
 }
-.footer-div p {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.753);
-}
-.social-icons {
-display: flex;
-gap: 8px;
-}
 .icon-group {
   margin: 32px 0;
   width: 544px;
   display: flex;
   justify-content: space-between; 
 }
+.social-icons {
+display: flex;
+gap: 8px;
+}
 
+.footer-div p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.753);
+}
+
+
+/* Button Hover Effect */
 .gradient-btn,
 .gradient-btn2,
 .subscribe-btn {
@@ -384,7 +401,6 @@ gap: 8px;
     transform 0.3s ease,
     filter 0.3s ease;
 }
-
 .gradient-btn:hover,
 .gradient-btn2:hover,
 .subscribe-btn:hover,
