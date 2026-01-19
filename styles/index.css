@@ -154,13 +154,13 @@ body {
   color: rgba(255, 255, 255, 0.753);
 }
 .rating-div {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 120px;
-    border-top: 1px solid rgba(255, 255, 255, 0.356);
-    padding-top: 80px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.356);
+  padding-top: 80px;
 }
 
 .rating-card {
@@ -179,100 +179,143 @@ body {
 }
 
 .grid-layout-sec {
-    background-color: #230e3d;
-    max-width: 1600;
+  background-color: #230e3d;
+  max-width: 1600;
 }
 .grid-layout-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 120px 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0;
 }
 .grid-layout {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
     "card1 card2 card2"
     "card1 card3 card3"
-    "card4 card4 card5"
+    "card4 card4 card5";
 }
 .grid-layout-container h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
 }
 .card {
-    background-color: #351165;
-    border-radius: 30px;
-    padding: 40px;
-    
-    
-
-
+  background-color: #351165;
+  border-radius: 30px;
+  padding: 40px;
 }
 .card h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin: 16px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 16px 0px;
 }
 .card p {
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.548);
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.548);
 }
 
-.card1 { grid-area: card1; }
-.card2 { grid-area: card2; }
-.card3 { grid-area: card3; }
-.card4 { grid-area: card4; }
-.card5 { grid-area: card5; }
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
 
 .play-list {
-    background-color: #351165;
-    border-radius: 20px;
-    width: 380px;
-    overflow: hidden;
-
+  background-color: #351165;
+  border-radius: 20px;
+  width: 380px;
+  overflow: hidden;
 }
 .description {
-    padding: 24px;
+  padding: 24px;
 }
 .description h3 {
-    font-size: 24px;
-    font-weight:bold;
-    color: white;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 .description p {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.562);
-    line-height: 24px;
-    margin: 12px 0px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.562);
+  line-height: 24px;
+  margin: 12px 0px;
 }
 .description span {
-    color: #00ff85;
-    font-size: 16px;
-    font-weight: 700;
+  color: #00ff85;
+  font-size: 16px;
+  font-weight: 700;
 }
 .playlist-main-div {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 120px;
 }
 .featured-episode-container {
-    background-color: #1a0b2e;
-    max-width: 1600px;
-    padding: 120px 0px;
+  background-color: #1a0b2e;
+  max-width: 1600px;
+  padding: 120px 0px;
 }
-.featured-area h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: white;
-    text-align: center;
+.featured-area h1, .meet-the-host h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+.host-details-container {
+  background-color: #351165;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.meet-the-host {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.host-details h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  
+}
+.host-details p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.596);
+  line-height: 24px;
+  margin: 16px 0;
+}
+.host-icons {
+  display: flex;
+  gap: 20px;
+}
+.host-icons img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  border-radius: 50%;
 }
