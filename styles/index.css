@@ -376,3 +376,20 @@ gap: 8px;
   display: flex;
   justify-content: space-between; 
 }
+
+.gradient-btn,
+.gradient-btn2,
+.subscribe-btn {
+  transition: 
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.gradient-btn:hover,
+.gradient-btn2:hover,
+.subscribe-btn:hover,
+.navbar ul li a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(234, 1, 255, 0.35);
+}
+
