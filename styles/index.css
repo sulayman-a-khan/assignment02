@@ -48,6 +48,11 @@ body {
   cursor: pointer;
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
 /* hero section */
 .hero-sec {
   background-image: url(../images/hero-bg.png);
@@ -426,29 +431,47 @@ gap: 8px;
   .navbar {
     padding: 20px;
   }
+  .navbar img {
+    width: 140px;
+  }
+  
   .navbar ul, .navbar .gradient-btn {
     display: none; /* In the screenshot, these are replaced by the menu icon */
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon img {
+    height: 20px;
+    width: 20px;
   }
   /* If you have a hamburger icon, it would show here */
 
   /* --- Hero Section --- */
   .hero-sec {
-    padding: 40px 20px !important;
+    padding: 40px 0px;
     background-size: cover;
-    
+    background-image: url("../images/small-hero-bg.png");
   }
   .hero {
     width: 100%;
     text-align: center;
   }
   .hero-image-div {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
     background-size: contain;
   }
   .hero-image-div img {
-    height: 100px;
+    height: 80px;
   }
+  .new-badge {
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  padding: 5px 10px;
+  }
+
   .hero h1 {
     font-size: 40px;
     margin-top: 30px;
@@ -546,15 +569,14 @@ gap: 8px;
   /* --- Footer --- */
   footer {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y:center;
+    background-image: url("../images/small-footer.png");
   }
   .footer-div {
     padding: 60px 20px;
   }
   .footer-logo {
     width: 220px;
-    height: auto;
+    height: 32px;
   }
   .icon-group {
     width: 100%;
