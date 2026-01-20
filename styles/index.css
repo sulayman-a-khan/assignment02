@@ -58,7 +58,7 @@ body {
   background-image: url(../images/hero-bg.png);
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 1600px; /* important! cover the container */
+  max-width: 1600px; 
   background-position: center;
   background-size: cover;
   padding: 100px 0px;
@@ -205,7 +205,7 @@ body {
   color: rgba(255, 255, 255, 0.726);
 }
 
-/* Grid Layout Section (why choose techwave) */
+/* Grid Layout Section */
 .grid-layout-sec {
   background-color: #230e3d;
   max-width: 1600;
@@ -300,9 +300,16 @@ body {
   margin: 12px 0px;
 }
 .description span {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
   color: #00ff85;
   font-size: 16px;
   font-weight: 700;
+}
+.description span img {
+  height: 19px;
+  width: 19px;
 }
 .playlist-main-div {
   max-width: 1200px;
@@ -419,7 +426,6 @@ gap: 8px;
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(234, 1, 255, 0.35);
 }
-
 
 
 
