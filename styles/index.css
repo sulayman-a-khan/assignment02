@@ -352,12 +352,12 @@ body {
 }
 .host-icons {
   display: flex;
-  gap: 7px;
+  gap: 10px;
 }
 
 .host-icon-border-div {
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border: 1px solid rgba(255, 255, 255, 0.363);
   border-radius: 50%;
   display: flex;
@@ -424,10 +424,7 @@ gap: 8px;
 
 
 @media screen and (max-width: 768px) {
-  /* --- Global Resets --- */
- 
-
-  /* --- Navbar (Match Screenshot) --- */
+  
   .navbar {
     padding: 20px;
   }
@@ -436,7 +433,7 @@ gap: 8px;
   }
   
   .navbar ul, .navbar .gradient-btn {
-    display: none; /* In the screenshot, these are replaced by the menu icon */
+    display: none; 
   }
   .menu-icon {
     display: block;
@@ -445,12 +442,12 @@ gap: 8px;
     height: 20px;
     width: 20px;
   }
-  /* If you have a hamburger icon, it would show here */
-
+  
   /* --- Hero Section --- */
   .hero-sec {
-    padding: 40px 0px;
-    background-size: cover;
+    padding: 0px;
+    background-size: 100% 100%;
+    width:100%;
     background-image: url("../images/small-hero-bg.png");
   }
   .hero {
@@ -460,7 +457,8 @@ gap: 8px;
   .hero-image-div {
     width: 200px;
     height: 200px;
-    background-size: contain;
+    background-size: cover;
+    margin-top: 40px;
   }
   .hero-image-div img {
     height: 80px;
@@ -468,7 +466,7 @@ gap: 8px;
   .new-badge {
   top: 10px;
   right: 10px;
-  font-size: 10px;
+  font-size: 15px;
   padding: 5px 10px;
   }
 
@@ -476,30 +474,40 @@ gap: 8px;
     font-size: 40px;
     margin-top: 30px;
   }
+  .hero p {
+    padding: 
+    0px 30px;
+  }
   .hero-btn-container {
    padding: 20px;
-    width: 100%;
    
   }
   .gradient-btn2, .subscribe-btn {
-    width: 100%;
     justify-content: center;
-    padding: 14px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
   }
 
-  /* --- About Section & 2x2 Stats Grid --- */
+  /* --- About Section  --- */
   .text-div h1 {
     font-size: 32px;
   }
   .text-div {
     padding: 0px 30px;
+    margin-bottom: 35px;
+  }
+  .br-hide {
+    display: none;
   }
   .rating-div {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Exact 2-column layout from image */
-    gap: 40px 20px;
-    border-top: none;
-    padding-top: 40px;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    padding: 40px 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.212);
   }
   .rating-card h1 {
     font-size: 32px;
@@ -510,21 +518,24 @@ gap: 8px;
     text-transform: uppercase;
   }
 
-  /* --- Why Choose TechWave (Stacked Cards) --- */
+  /* --- Why Choose TechWave --- */
+  .grid-layout-container {
+    padding: 50px 0px;
+  }
   .grid-layout-container h2 {
     font-size: 32px;
   }
   .grid-layout {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
+    flex-direction: column; 
     gap: 15px;
     padding: 0px 30px;
   }
   .card {
-    grid-area: auto !important; /* Force ignore desktop grid-areas */
+    grid-area: auto !important; 
     width: 100%;
     padding: 30px;
-    background-color: #2d144b; /* Darker purple matching image cards */
+    background-color: #2d144b; 
     align-items: flex-start;
   }
   .card h1 {
@@ -532,10 +543,17 @@ gap: 8px;
   }
 
   /* --- Featured Episodes --- */
+  .featured-episode-container {
+    padding: 40px 0px;
+  }
+  .featured-episode-container h1 {
+    font-size: 32px;
+  }
   .playlist-main-div {
     flex-direction: column;
     gap: 25px;
     padding: 0px 30px;
+    margin-bottom: 80px;
   }
   .play-list {
     width: 100%;
@@ -575,17 +593,15 @@ gap: 8px;
     padding: 60px 20px;
   }
   .footer-logo {
-    width: 220px;
-    height: 32px;
+    width: 270px;
+    
   }
   .icon-group {
-    width: 100%;
+    width: 380px;
     flex-wrap: wrap;
     padding: 0px 40px;
     justify-content: center;
-    
-    
     margin: 30px auto;
-    gap: 15px;
+    gap: 25px;
   }
 }
